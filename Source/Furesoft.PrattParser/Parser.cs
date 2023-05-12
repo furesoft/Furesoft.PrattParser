@@ -26,10 +26,33 @@ public class Parser<T> {
       Register(leftToken, (IPrefixParselet<T>)new GroupParselet(rightToken));
    }
 
+   public List<T> ParseSeperated(TokenType seperator, TokenType terminator)
+   {
+       var args = new List<T>();
+
+       // There may be no arguments at all.
+       if (!Match(terminator)) {
+           do {
+               args.Add(Parse());
+           } while (Match(seperator));
+           Consume(terminator);
+       }
+
+       return args;
+   }
+
+   public void Skip(TokenType tokenTypeToSkip)
+   {
+       while (LookAhead(0).Type.Equals(tokenTypeToSkip))
+       {
+           Consume();
+       }
+   }
+
    public T Parse(int precedence) {
       var token = Consume();
 
-      if (!_prefixParselets.TryGetValue(token.Type, out var prefix)) {
+      if (!_prefixParselets.TryGetValue((TokenType)token.Type, out var prefix)) {
          throw new ParseException("Could not parse \"" + token.Text + "\".");
       }
 
@@ -38,7 +61,7 @@ public class Parser<T> {
       while (precedence < GetBindingPower()) {
          token = Consume();
 
-         if (!_infixParselets.TryGetValue(token.Type, out var infix)) {
+         if (!_infixParselets.TryGetValue((TokenType)token.Type, out var infix)) {
             throw new ParseException("Could not parse \"" + token.Text + "\".");
          }
          left = infix.Parse(this, left, token);
@@ -53,7 +76,7 @@ public class Parser<T> {
 
    public bool Match(TokenType expected) {
       var token = LookAhead(0);
-      if (token.Type != expected) {
+      if ((TokenType)token.Type != expected) {
          return false;
       }
 
@@ -63,7 +86,7 @@ public class Parser<T> {
 
    public Token Consume(TokenType expected) {
       var token = LookAhead(0);
-      if (token.Type != expected) {
+      if ((TokenType)token.Type != expected) {
          throw new ParseException("Expected token " + expected + " and found " + token.Type);
       }
 
@@ -88,7 +111,7 @@ public class Parser<T> {
    }
 
    private int GetBindingPower() {
-      if (_infixParselets.TryGetValue(LookAhead(0).Type, out var parselet)) {
+      if (_infixParselets.TryGetValue((TokenType)LookAhead(0).Type, out var parselet)) {
          return parselet.GetBindingPower();
       }
       return 0;
