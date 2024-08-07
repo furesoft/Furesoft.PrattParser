@@ -1,0 +1,280 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Silverfly.Testing/1.0.67": {
+        "dependencies": {
+          "Microsoft.SourceLink.GitHub": "8.0.0",
+          "NUnit": "3.13.3",
+          "Silverfly": "1.0.67",
+          "Verify": "20.6.0",
+          "Verify.NUnit": "20.6.0"
+        },
+        "runtime": {
+          "Silverfly.Testing.dll": {}
+        }
+      },
+      "Argon/0.7.2": {
+        "runtime": {
+          "lib/net8.0/Argon.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "DiffEngine/12.0.0": {
+        "dependencies": {
+          "EmptyFiles": "4.4.0",
+          "System.Management": "6.0.2"
+        },
+        "runtime": {
+          "lib/net7.0/DiffEngine.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "EmptyFiles/4.4.0": {
+        "runtime": {
+          "lib/net7.0/EmptyFiles.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Microsoft.Build.Tasks.Git/8.0.0": {},
+      "Microsoft.NETCore.Platforms/1.1.0": {},
+      "Microsoft.SourceLink.Common/8.0.0": {},
+      "Microsoft.SourceLink.GitHub/8.0.0": {
+        "dependencies": {
+          "Microsoft.Build.Tasks.Git": "8.0.0",
+          "Microsoft.SourceLink.Common": "8.0.0"
+        }
+      },
+      "NETStandard.Library/2.0.0": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "NUnit/3.13.3": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/nunit.framework.dll": {
+            "assemblyVersion": "3.13.3.0",
+            "fileVersion": "3.13.3.0"
+          }
+        }
+      },
+      "SimpleInfoName/2.1.1": {
+        "runtime": {
+          "lib/net7.0/SimpleInfoName.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "System.CodeDom/6.0.0": {
+        "runtime": {
+          "lib/net6.0/System.CodeDom.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "System.Collections.Immutable/8.0.0": {},
+      "System.IO.Hashing/7.0.0": {
+        "runtime": {
+          "lib/net7.0/System.IO.Hashing.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.51805"
+          }
+        }
+      },
+      "System.Management/6.0.2": {
+        "dependencies": {
+          "System.CodeDom": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/System.Management.dll": {
+            "assemblyVersion": "6.0.0.2",
+            "fileVersion": "6.0.1823.26907"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Management.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.2",
+            "fileVersion": "6.0.1823.26907"
+          }
+        }
+      },
+      "Verify/20.6.0": {
+        "dependencies": {
+          "Argon": "0.7.2",
+          "DiffEngine": "12.0.0",
+          "EmptyFiles": "4.4.0",
+          "SimpleInfoName": "2.1.1",
+          "System.IO.Hashing": "7.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Verify.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Verify.NUnit/20.6.0": {
+        "dependencies": {
+          "EmptyFiles": "4.4.0",
+          "NUnit": "3.13.3",
+          "Verify": "20.6.0"
+        },
+        "runtime": {
+          "lib/net8.0/Verify.NUnit.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Silverfly/1.0.67": {
+        "dependencies": {
+          "System.Collections.Immutable": "8.0.0"
+        },
+        "runtime": {
+          "Silverfly.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Silverfly.Testing/1.0.67": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Argon/0.7.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6OsUiGsZzKx9BR15T4V+YDfpzFj8AQvtlw81VZm0LCOyu4OGqs4YFANTuhpdyb3N/qPcMomAt25zARo+zFtPmw==",
+      "path": "argon/0.7.2",
+      "hashPath": "argon.0.7.2.nupkg.sha512"
+    },
+    "DiffEngine/12.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hNlvroApwjYdW3UYcjztpBJy82tXTsD9ivSkdZqgRRpw3p979iM6Uy5LYpCIpJ0eK1UqcQAuxTem7//rLpEpIg==",
+      "path": "diffengine/12.0.0",
+      "hashPath": "diffengine.12.0.0.nupkg.sha512"
+    },
+    "EmptyFiles/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gwJEfIGS7FhykvtZoscwXj/XwW+mJY6UbAZk+qtLKFUGWC95kfKXnj8VkxsZQnWBxJemM/q664rGLN5nf+OHZw==",
+      "path": "emptyfiles/4.4.0",
+      "hashPath": "emptyfiles.4.4.0.nupkg.sha512"
+    },
+    "Microsoft.Build.Tasks.Git/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bZKfSIKJRXLTuSzLudMFte/8CempWjVamNUR5eHJizsy+iuOuO/k2gnh7W0dHJmYY0tBf+gUErfluCv5mySAOQ==",
+      "path": "microsoft.build.tasks.git/8.0.0",
+      "hashPath": "microsoft.build.tasks.git.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "path": "microsoft.netcore.platforms/1.1.0",
+      "hashPath": "microsoft.netcore.platforms.1.1.0.nupkg.sha512"
+    },
+    "Microsoft.SourceLink.Common/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dk9JPxTCIevS75HyEQ0E4OVAFhB2N+V9ShCXf8Q6FkUQZDkgLI12y679Nym1YqsiSysuQskT7Z+6nUf3yab6Vw==",
+      "path": "microsoft.sourcelink.common/8.0.0",
+      "hashPath": "microsoft.sourcelink.common.8.0.0.nupkg.sha512"
+    },
+    "Microsoft.SourceLink.GitHub/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-G5q7OqtwIyGTkeIOAc3u2ZuV/kicQaec5EaRnc0pIeSnh9LUjj+PYQrJYBURvDt7twGl2PKA7nSN0kz1Zw5bnQ==",
+      "path": "microsoft.sourcelink.github/8.0.0",
+      "hashPath": "microsoft.sourcelink.github.8.0.0.nupkg.sha512"
+    },
+    "NETStandard.Library/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
+      "path": "netstandard.library/2.0.0",
+      "hashPath": "netstandard.library.2.0.0.nupkg.sha512"
+    },
+    "NUnit/3.13.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KNPDpls6EfHwC3+nnA67fh5wpxeLb3VLFAfLxrug6JMYDLHH6InaQIWR7Sc3y75d/9IKzMksH/gi08W7XWbmnQ==",
+      "path": "nunit/3.13.3",
+      "hashPath": "nunit.3.13.3.nupkg.sha512"
+    },
+    "SimpleInfoName/2.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0FkAdjkNjtEdSCt2/b6z5gd971bmTCXhRHqi8kH5Z/gV/XV/LmKeHrUmnBZffhPH91LUyaw3pzmQROTs4zNfGw==",
+      "path": "simpleinfoname/2.1.1",
+      "hashPath": "simpleinfoname.2.1.1.nupkg.sha512"
+    },
+    "System.CodeDom/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CPc6tWO1LAer3IzfZufDBRL+UZQcj5uS207NHALQzP84Vp/z6wF0Aa0YZImOQY8iStY0A2zI/e3ihKNPfUm8XA==",
+      "path": "system.codedom/6.0.0",
+      "hashPath": "system.codedom.6.0.0.nupkg.sha512"
+    },
+    "System.Collections.Immutable/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AurL6Y5BA1WotzlEvVaIDpqzpIPvYnnldxru8oXJU2yFxFUy3+pNXjXd1ymO+RA0rq0+590Q8gaz2l3Sr7fmqg==",
+      "path": "system.collections.immutable/8.0.0",
+      "hashPath": "system.collections.immutable.8.0.0.nupkg.sha512"
+    },
+    "System.IO.Hashing/7.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sDnWM0N3AMCa86LrKTWeF3BZLD2sgWyYUc7HL6z4+xyDZNQRwzmxbo4qP2rX2MqC+Sy1/gOSRDah5ltxY5jPxw==",
+      "path": "system.io.hashing/7.0.0",
+      "hashPath": "system.io.hashing.7.0.0.nupkg.sha512"
+    },
+    "System.Management/6.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-s6c9x2Kghd+ncEDnT6ApYVOacDXr/Y57oSUSx6wjegMOfKxhtrXn3PdASPNU59y3kB9OJ1yb3l5k6uKr3bhqew==",
+      "path": "system.management/6.0.2",
+      "hashPath": "system.management.6.0.2.nupkg.sha512"
+    },
+    "Verify/20.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-c2ikJFLOOgH/FxnzLQfQ0i5qDoceCyrXh1AK/eJQK8UFlV+3ARTB3yEYSsn3O8pZrhtxr+gZZ+zOkjUjUmGmyw==",
+      "path": "verify/20.6.0",
+      "hashPath": "verify.20.6.0.nupkg.sha512"
+    },
+    "Verify.NUnit/20.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ddoEuRX7mw5oVTBaXm9q2Q4uYP93+vZL7S2FzNNnxShcy1KC1ALeK4828XF/e7y2pszCosxoBWfVUElWAEsRcQ==",
+      "path": "verify.nunit/20.6.0",
+      "hashPath": "verify.nunit.20.6.0.nupkg.sha512"
+    },
+    "Silverfly/1.0.67": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
